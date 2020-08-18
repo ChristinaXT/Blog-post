@@ -8,7 +8,7 @@ class UserHeader extends React.Component {
   }
 
   render() {
-    const user = this.props.users.find((user) => );
+    const user = this.props.users.find((user) => user.id === this.props.userId);
 
     return <div>User Header</div>;
   }
