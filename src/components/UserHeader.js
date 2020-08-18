@@ -8,6 +8,8 @@ class UserHeader extends React.Component {
   }
 
   render() {
+    const user = this.props.users.find((user) => );
+
     return <div>User Header</div>;
   }
 }
