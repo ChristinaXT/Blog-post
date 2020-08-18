@@ -7,5 +7,5 @@ export const fetchPosts = () => async dispatch => {
   };
 
   export const fecthUser = (id) => async dispatch => {
-    const response = await jsonPlaceholder.get() 
-  }
+    const response = await jsonPlaceholder.get()
+  };
