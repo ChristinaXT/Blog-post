@@ -8,7 +8,7 @@ class PostList extends React.Component {
     this.props.fetchPosts();
   }
 
-  renderlist() {
+  renderList() {
      return this.props.posts.map(post => {
        return (
           <div className="item" key={post.id}>
@@ -26,6 +26,7 @@ class PostList extends React.Component {
   }
 
   render() {
+    // console.log(this.props.posts);
     return <div className="ui relaxed divided list"> {this.renderList()}</div>;
   }
 }
@@ -34,4 +35,7 @@ const mapStateToProps = (state) => {
   return { posts: state.posts };
 }
 
-export default connect(mapStateToProps, { fetchPosts })(PostList);
+export default connect(
+  mapStateToProps,
+  { fetchPosts }
+)(PostList);
