@@ -8,7 +8,7 @@ export const fetchPosts = () => async dispatch => {
   };
 
   export const fetchUser = id => async dispatch => {
-
+     _fetchUser();
   };
 
   const _fetchUser = _.memoize(() => {
