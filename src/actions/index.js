@@ -8,9 +8,11 @@ export const fetchPosts = () => async dispatch => {
   };
 
   export const fetchUser = id => async dispatch => {
+
+  };
+
+  const _fetchUser = _.memoize(() => {
     const response = await jsonPlaceholder.get(`/users/${id}`);
 
     dispatch({ type: 'FETCH_USER', payload: response.data });
-  };
-
-  
+  });
